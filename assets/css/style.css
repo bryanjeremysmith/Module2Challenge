@@ -1,0 +1,179 @@
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 800px;
+}
+
+/* Header's padding, font-family, background-color, and color */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {
+    position: relative;
+    color: white;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+    flex: 1 1 200px;
+}
+
+.bottom-left-large{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 48px;
+}
+
+
+/* Header's nav's padding-top, margin-right, float, font-family, and font size */
+header nav {
+    padding-top: 10px;
+    margin-right: 10px;
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-items: right;
+    align-items:flex-end;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Header's nav's ul's list-style-type */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: bottom;
+}
+
+/* Header's nav's ul's li's display and margin-left */
+header nav ul li {
+    margin: 10px;
+}
+
+.primary-work-card {
+    position: relative;
+    color: white;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.primary-work-card img{
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.secondary-work-cards {
+    position: relative;
+    color: white;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.secondary-work-cards img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.bottom-left-small{
+    position: absolute;
+    bottom: 8px;
+    left: 24px;
+    font-size: 32px;
+    color: black;
+}
+
+.card {
+    /* flex: 1 1 0; */
+    padding: 10px 0px 10px 10px; 
+    text-align: left;
+    outline: solid black 2px ;
+    align-items: flex-start;
+}
+  
+.card header {
+    padding: 10px;
+    background: #13293d;
+    color: #fff;
+    width: 200px;
+}
+
+.card p {
+    justify-content: left;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-container {
+    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container a {
+    margin: 10px;
+    text-align: left;
+}
+
+.card-container div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-container p {
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+
+/* footer's padding, clear, font-family and text-align */
+footer {
+    padding: 10px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* footer's h2's font-size */
+footer h2 {
+    font-size: 20px;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    main{
+        flex-direction: column;
+    }
+}
+
+/* As a large screen gets smaller, first, make the navbar
+go vertical */
+@media screen and (max-width: 1053px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
+  
+/* As the screen gets even smaller, have the structure flow vertically,
+but change the navbar back to horizontal */
+@media screen and (max-width: 793px) {
+    main,
+    header,
+    .card,
+    .card-container,
+    .card-container div,
+    .card p{
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+}  
