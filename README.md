@@ -34,7 +34,7 @@ https://bryanjeremysmith.github.io/Module2Challenge/
 
 ## Usage
 
-![screenshot of index.html](./assets/images/screenshot.png)
+![screenshot of index.html](./assets/images/module2challenge.png)
 
 ## Credits
 
