@@ -24,9 +24,13 @@ header {
     flex: 1 1 200px;
 }
 
+.profile img {
+    width: 256px;
+}
+
 .bottom-left-large{
     position: absolute;
-    bottom: 8px;
+    bottom: -16px;
     left: 16px;
     font-size: 48px;
 }

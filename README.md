@@ -38,7 +38,7 @@ https://bryanjeremysmith.github.io/Module2Challenge/
 
 ## Credits
 
-https://github.com/coding-boot-camp/urban-octo-telegram
+N/A
 
 ## License
 
