@@ -94,7 +94,7 @@ header nav ul li {
     color: black;
 }
 
-.card {
+.mycard {
     /* flex: 1 1 0; */
     padding: 10px 0px 10px 10px; 
     text-align: left;
@@ -102,14 +102,14 @@ header nav ul li {
     align-items: flex-start;
 }
   
-.card header {
+.mycard header {
     padding: 10px;
     background: #13293d;
     color: #fff;
     width: 200px;
 }
 
-.card p {
+.mycard p {
     justify-content: left;
     margin: 10px;
     transition: all 0.5s ease-in-out;
@@ -165,7 +165,7 @@ go vertical */
     }
 }
   
-/* As the screen gets even smaller, have the structure flow vertically,
+/* /* As the screen gets even smaller, have the structure flow vertically,
 but change the navbar back to horizontal */
 @media screen and (max-width: 793px) {
     main,
@@ -180,4 +180,4 @@ but change the navbar back to horizontal */
     header nav ul {
         flex-direction: row;
     }
-}  
+}

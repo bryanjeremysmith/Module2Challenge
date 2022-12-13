@@ -3,9 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    
     <!-- Link to Bootstrap's CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>BJ Smith's Portfolio</title>
 </head>
 
@@ -18,7 +19,7 @@
             </div>
         </div>
 
-        <div class="navbar">
+        <div class="navbar align-items-end">
             <a class="nav-item nav-link text-light" href="#about-me">About Me</a>
             <a class="nav-item nav-link text-light" href="#work">Work</a>
             <a class="nav-item nav-link text-light" href="#contact-me">Contact Me</a>
@@ -26,32 +27,75 @@
         </div>
     </header>
     <main>
-        <section id="about-me" class="card">
+        <section id="about-me" class="mycard">
             <section class="card-container">
                 <header>About Me</header>
                 <p>I'm a student at a Web Development Bootcamp, and this page will be used to demonstrate my work. <br>  I live in Beaverton, Oregon with my wife and two kids.</p>
             </section>
         </section>
-        <section id="work" class="card">
+        <section id="work" class="mycard">
             <section class="card-container">
                 <header>Work</header>
-                <div>
-                    <div class="primary-work-card">
-                        <a href="https://bryanjeremysmith.github.io/Module1Challenge/">
-                            <img src="./assets/images/module1challenge.png"  alt="a screenshot of an application with a group of people huddled around a table">
-                        </a>
-                        <h2 class="bottom-left-small">Module1</h2>
-                    </div>
-                    <div class="secondary-work-cards">
-                        <a href="https://www.logostech.net/products/kestrel-block-ii/">
-                            <img src="./assets/images/kb2.png" alt="an aerostat with a sensor on the bottom">
-                        </a>
-                        <h2 class="bottom-left-small">KB2</h2>
-                    </div>
+                <div class="card m-3 p-3">
+                  <a href="https://bryanjeremysmith.github.io/movies2watch/">
+                    <img class="card-img" src="./assets/images/movies2watch.png" alt="a website to help research movies">
+                  </a>
+                  <div class="card-footer">
+                    <large class="card-title font-weight-bold">Movies2Watch</medium>
+                    <small class="card-text text">jQuery</small>
+                  </div>
                 </div>
-            </section>
+
+                <div class="card-deck">
+                    <div class="card">
+                      <a href="https://bryanjeremysmith.github.io/Module1Challenge/">
+                        <img class="card-img" src="./assets/images/module1challenge.png" alt="a meeting taking place around a table">
+                      </a>                      
+                      <div class="card-footer">
+                        <large class="card-title font-weight-bold">Module 1 Challenge</large>
+                        <small class="card-text">CSS</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="https://bryanjeremysmith.github.io/Module3Challenge/">
+                        <img class="card-img" src="./assets/images/password-generator.png" alt="password generator">
+                      </a>                      
+                      <div class="card-footer">
+                        <medium class="card-title font-weight-bold">Password Generator</medium>
+                        <small class="card-text">CSS</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="https://bryanjeremysmith.github.io/Module4Challenge/">
+                        <img class="card-img" src="./assets/images/coding-quiz.gif" alt="coding quiz">
+                      </a>                      
+                      <div class="card-footer">
+                        <medium class="card-title font-weight-bold">Coding Quiz</medium>
+                        <small class="card-text">CSS</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="https://bryanjeremysmith.github.io/Module5Challenge/">
+                        <img class="card-img" src="./assets/images/work-day-scheduler.gif" alt="work day scheduler">
+                      </a>                      
+                      <div class="card-footer">
+                        <medium class="card-title font-weight-bold">Work Day Scheduler</hmedium2>
+                        <small class="card-text">jQuery</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="https://bryanjeremysmith.github.io/weather-dashboard/">
+                        <img class="card-img" src="./assets/images/weather-dashboard.png" alt="weather summary quiz">
+                      </a>                      
+                      <div class="card-footer">
+                        <medium class="card-text font-weight-bold">Weather Dashboard</medium>
+                        <small class="card-text">jQuery</small>
+                      </div>
+                    </div>
+                  </div>
+            </section> 
         </section>
-        <section id="contact-me" class="card">
+        <section id="contact-me" class="mycard">
             <section class="card-container">
                 <header>Contact Me</header>
                 <a href="tel:5558675309">Call me at 555-867-5309</a>
@@ -60,11 +104,15 @@
                 <a href="https://github.com/bryanjeremysmith">GitHub</a>
             </section>
         </section>
-        <section id="resume" class="card">
+        <section id="resume" class="mycard">
             <section class="card-container">
                 <header>Resume</header>
-                <p>Since 2011, I've been a Software Engineer with a small company in various roles.<br>I moved to Beaverton, Oregon in 2017 from Morrisville, North Carlina. <br>
-                From 2003 to 2011, I worked full-time as a Software Engineer<br>while earning my Master's and PhD in Computer Science part-time.</p>
+                <p>
+                  <div class="text-left">
+                    Since 2011, I've been a Software Engineer with a small company in various roles. I moved to Beaverton, Oregon in 2017 from Morrisville, North Carlina. <br>
+                    From 2003 to 2011, I worked full-time as a Software Engineer while earning my Master's and PhD in Computer Science part-time.
+                  </div>
+                </p>
             </section>
         </section>
     </main>
